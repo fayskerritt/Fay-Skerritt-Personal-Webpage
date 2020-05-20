@@ -12,37 +12,62 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html"></a>
+        <nav class="nav-bar navbar-fixed-top" id="navbar">
+            <a href="index.html">
+                <img class="logo" src="assets/images/logo.png" alt="logo">
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li>
-                    <a href="#about-section"></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section>
+    <div class="background">
         <section>
-            <h1 id="title" class="section-header">Fay Skerritt</h1>
-            <h2 class="section-sub">Studying to be a Full Stack Web Developer</h2>
+            <section>
+                <h1 id="title">Fay Skerritt</h1>
+                <h2 class="title-sub">Studying to be a Full Stack Web Developer</h2>
+            </section>
+            <section>
+                <h1 id="about" class="section-heading">About Me</h1>
+                <h3 class="section-sub">A little bit about me</h3>
+            </section>
+            <section>
+                <h1 id="resume" class="section-heading">Resume</h1>
+                <h3 class="section-sub">My education and work experience</h3>
+            </section>
+            <section>
+                <h1 id="contact" class="section-heading">Contact Me</h1>
+                <h3 class="section-sub">For more information, fill out the form below</h3> 
+            </section>
         </section>
-        <section>
-            <h1 id="about" class="section-header">About Me</h1>
-            <h3 class="section-sub">A little bit about me</h3>
-        </section>
-        <section>
-            <h1 id="resume" class="section-header">Resume</h1>
-            <h3 class="section-sub">My education and work experience</h3>
-        </section>
-        <section>
-            <h1 id="contact" class="section-header">Contact Me</h1>
-            <h3 class="section-sub">For more information, fill out the form below</h3> 
-        </section>
-    </section>
+    </div>
     <footer>
     
     </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+        }
+</script>
 </body>
 </html>

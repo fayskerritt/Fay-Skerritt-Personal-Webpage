@@ -1,5 +1,9 @@
+
+
 body h1, h2, h3, h4, h5, h6 {
     font-family: "DM Serif Text", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 body p {
@@ -10,7 +14,7 @@ header {
     font-family: "DM Serif Text", sans-serif;
 }
 
-.section-header, .section-sub {
+.section-heading, .section-sub, #title, .title-sub {
     text-align: center;
 }
 
@@ -19,3 +23,54 @@ header {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.title-sub {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/*----------------------------------------- Nav Bar */
+
+.nav-bar {
+    background-color: #000;
+    top: 0;
+    overflow: hidden;
+}
+
+.nav-bar a {
+    color: #fff;
+    float: left;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-left: 50px;
+}
+
+.nav {
+    float: right;
+}
+
+.logo {
+    left: 0;
+    top: 0;
+    height: 40px;
+    padding-top: 5px;
+}
+
+/*.sticky taken from w3schools.com*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+  /*----------------------------------------- Background */
+
+.background {
+    background-color: #f5ab92;
+    border-radius: 50%;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 100vh;
+}
+
